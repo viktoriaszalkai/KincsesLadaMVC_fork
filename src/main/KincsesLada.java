@@ -4,8 +4,7 @@ import modell.JatekModell;
 import nezet.CuiNezet;
 import nezet.FelugroNezet;
 import nezet.KonzolNezet;
-import vezerlo.FelugroVezerlo;
-import vezerlo.KonzolVezerlo;
+import vezerlo.CuiVezerlo;
 
 public class KincsesLada {
 
@@ -25,11 +24,13 @@ public class KincsesLada {
         
         /* közös őssel */
         CuiNezet nezet;
+        
         nezet = new KonzolNezet();
-        new KonzolVezerlo(modell, nezet);
+        new CuiVezerlo(modell, nezet);
+                
         
         nezet = new FelugroNezet();
-        new KonzolVezerlo(modell, nezet);
+        new CuiVezerlo(modell, nezet);
     }
     
 }
