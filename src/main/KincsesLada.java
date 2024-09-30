@@ -1,6 +1,7 @@
 package main;
 
 import modell.JatekModell;
+import nezet.CuiNezet;
 import nezet.FelugroNezet;
 import nezet.KonzolNezet;
 import vezerlo.FelugroVezerlo;
@@ -19,8 +20,16 @@ public class KincsesLada {
         //new KonzolVezerlo(modell, nezet);
         
         /* felugro */
-        FelugroNezet nezet = new FelugroNezet();
-        new FelugroVezerlo(modell, nezet);
+        //FelugroNezet nezet = new FelugroNezet();
+        //new FelugroVezerlo(modell, nezet);
+        
+        /* közös őssel */
+        CuiNezet nezet;
+        nezet = new KonzolNezet();
+        new KonzolVezerlo(modell, nezet);
+        
+        nezet = new FelugroNezet();
+        new KonzolVezerlo(modell, nezet);
     }
     
 }

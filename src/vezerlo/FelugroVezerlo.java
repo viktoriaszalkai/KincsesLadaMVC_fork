@@ -1,13 +1,13 @@
 package vezerlo;
 
 import modell.JatekModell;
-import nezet.FelugroNezet;
+import nezet.CuiNezet;
 
 public class FelugroVezerlo {
     private JatekModell modell;
-    private FelugroNezet nezet;
+    private CuiNezet nezet;
 
-    public FelugroVezerlo(JatekModell modell, FelugroNezet nezet) {
+    public FelugroVezerlo(JatekModell modell, CuiNezet nezet) {
         this.modell = modell;
         this.nezet = nezet;
         start(); 
