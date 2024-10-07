@@ -16,6 +16,8 @@ public class KincsesLada {
         
         /* MVC */
         JatekModell modell = new JatekModell();
+        GuiNezet nezet = new GuiNezet();
+        new GuiVezerlo(modell, nezet);
         /* konzol */
         //KonzolNezet nezet = new KonzolNezet();
         //new KonzolVezerlo(modell, nezet);
@@ -34,8 +36,7 @@ public class KincsesLada {
 //        nezet = new FelugroNezet();
 //        new CuiVezerlo(modell, nezet);
         
-        GuiNezet nezet = new GuiNezet();
-        new GuiVezerlo(modell, nezet);
+        
     }
     
 }
